@@ -47,6 +47,21 @@ const router = createRouter({
           name: 'Chat',
           component: () => import('../views/authenticated/ChatView.vue'),
         },
+        {
+          path: 'profile',
+          name: 'Profile',
+          component: () => import('../views/authenticated/ProfileView.vue'),
+        },
+        {
+          path: 'students_enrollment',
+          name: 'Students Enrollment',
+          component: () => import('../views/authenticated/StudentsEnrollmentView.vue'),
+        },
+        {
+          path: 'create_course',
+          name: 'Create Course',
+          component: () => import('../views/authenticated/CreateCourseView.vue'),
+        },
       ]
     },
     {
